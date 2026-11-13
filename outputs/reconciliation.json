@@ -1,0 +1,29 @@
+{
+  "tables": {
+    "customers": {
+      "expected_rows": 545,
+      "target_rows": 545,
+      "expected_checksum": "4b8409271a90a65b",
+      "target_checksum": "4b8409271a90a65b",
+      "missing_in_target": [],
+      "extra_in_target": [],
+      "value_diffs": [],
+      "match": true
+    },
+    "orders": {
+      "expected_rows": 1585,
+      "target_rows": 1585,
+      "expected_checksum": "09bf27e7cf2fa008",
+      "target_checksum": "09bf27e7cf2fa008",
+      "missing_in_target": [],
+      "extra_in_target": [],
+      "value_diffs": [],
+      "match": true
+    }
+  },
+  "match": true,
+  "mismatched_pks": {},
+  "deletes_in_log": 40,
+  "deletes_stayed_deleted": 30,
+  "deletes_resurrected": 10
+}

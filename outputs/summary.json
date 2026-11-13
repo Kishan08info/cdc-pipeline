@@ -1,0 +1,90 @@
+{
+  "seed": 42,
+  "snapshot": {
+    "customers": 500,
+    "orders": 1500
+  },
+  "events_generated": 640,
+  "deliveries_total": 665,
+  "duplicate_deliveries_injected": 25,
+  "delayed_deliveries_injected": 15,
+  "resurrections_in_log": 10,
+  "crash_run_stop_after": 200,
+  "crash_run": {
+    "deliveries_read": 200,
+    "applied": 188,
+    "duplicates_skipped": 5,
+    "stale_skipped": 7,
+    "deletes_applied": 3,
+    "resurrections": 3,
+    "inserts": 10,
+    "updates": 175,
+    "checkpoint_last_seq_seen": 200,
+    "target_customers": 500,
+    "target_orders": 1500
+  },
+  "resume_run": {
+    "deliveries_read": 665,
+    "applied": 437,
+    "duplicates_skipped": 220,
+    "stale_skipped": 8,
+    "deletes_applied": 30,
+    "resurrections": 0,
+    "inserts": 160,
+    "updates": 247,
+    "checkpoint_last_seq_seen": 640,
+    "target_customers": 545,
+    "target_orders": 1585
+  },
+  "idempotency_run": {
+    "deliveries_read": 665,
+    "applied": 0,
+    "duplicates_skipped": 665,
+    "stale_skipped": 0,
+    "deletes_applied": 0,
+    "resurrections": 0,
+    "inserts": 0,
+    "updates": 0,
+    "checkpoint_last_seq_seen": 640,
+    "target_customers": 545,
+    "target_orders": 1585
+  },
+  "reconciliation": {
+    "tables": {
+      "customers": {
+        "expected_rows": 545,
+        "target_rows": 545,
+        "expected_checksum": "4b8409271a90a65b",
+        "target_checksum": "4b8409271a90a65b",
+        "missing_in_target": [],
+        "extra_in_target": [],
+        "value_diffs": [],
+        "match": true
+      },
+      "orders": {
+        "expected_rows": 1585,
+        "target_rows": 1585,
+        "expected_checksum": "09bf27e7cf2fa008",
+        "target_checksum": "09bf27e7cf2fa008",
+        "missing_in_target": [],
+        "extra_in_target": [],
+        "value_diffs": [],
+        "match": true
+      }
+    },
+    "match": true,
+    "mismatched_pks": {},
+    "deletes_in_log": 40,
+    "deletes_stayed_deleted": 30,
+    "deletes_resurrected": 10
+  },
+  "totals": {
+    "deliveries_read": 865,
+    "unique_events_applied": 625,
+    "injected_duplicates_skipped": 25,
+    "resume_rereads_skipped": 200,
+    "stale_skipped": 15,
+    "deletes_applied": 33,
+    "resurrections_applied": 3
+  }
+}
